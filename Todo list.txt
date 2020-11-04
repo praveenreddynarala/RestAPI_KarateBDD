@@ -1,0 +1,15 @@
+Read the environment variable from runner to karate-config file and then to feature file
+Read uri from Karate-config file
+generating any random number also should be done in karate config file
+sample.json at one place in resource folder
+resource file -->features and responses(response or input file)
+Mocking API's
+Open API Specification - API Integration Testing (how we will perform api testing in sprint)
+Test Data
+Running cases from command line
+CICD
+
+Configure Yaml File
+configuration of files needs to be looked
+start implementing different methods delete,..etc
+cucumber reporting

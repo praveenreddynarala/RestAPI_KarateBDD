@@ -1,0 +1,15 @@
+13:40:39.180 karate.env system property was: dev 
+13:40:39.606 [print] {
+  "uuid": 3e94cce3-ff78-469b-8bf0-61f64fc5a9ac
+}
+
+13:40:39.730 request:
+1 > GET https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/12)
+
+13:40:51.766 java.net.UnknownHostException: No such host is known (reqres.in), http call failed after 12036 milliseconds for URL: https://reqres.in/api/users/2
+13:40:51.766 http request failed: 
+java.net.UnknownHostException: No such host is known (reqres.in)

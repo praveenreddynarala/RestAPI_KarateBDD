@@ -1,0 +1,143 @@
+<testsuite failures="0" name="testpackage/testapi.feature" skipped="0" tests="5" time="3.52198">
+  <testcase classname="testpackage.testapi" name="get all users and then get the first user by id" time="1.285725">
+    <system-out>* url URL ................................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def first = response.data ............................................... passed
+Given path 'api/users', first.id .......................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == read(getRequestBody) ................................ passed</system-out>
+  </testcase>
+  <testcase classname="testpackage.testapi" name="create a user and then get it by id" time="0.555011">
+    <system-out>* url URL ................................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def first = response.data ............................................... passed
+Given path 'api/users', first.id .......................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == read(getRequestBody) ................................ passed
+* url URL ................................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users' .................................................... passed
+And request postRequest ................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* def id = response.id .................................................... passed
+* print 'created id is: ', id ............................................. passed</system-out>
+  </testcase>
+  <testcase classname="testpackage.testapi" name="update a user" time="0.515653">
+    <system-out>* url URL ................................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def first = response.data ............................................... passed
+Given path 'api/users', first.id .......................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == read(getRequestBody) ................................ passed
+* url URL ................................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users' .................................................... passed
+And request postRequest ................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* def id = response.id .................................................... passed
+* print 'created id is: ', id ............................................. passed
+* url URL ................................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+And request putRequestBody ................................................ passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="testpackage.testapi" name="delete a user" time="0.524698">
+    <system-out>* url URL ................................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def first = response.data ............................................... passed
+Given path 'api/users', first.id .......................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == read(getRequestBody) ................................ passed
+* url URL ................................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users' .................................................... passed
+And request postRequest ................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* def id = response.id .................................................... passed
+* print 'created id is: ', id ............................................. passed
+* url URL ................................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+And request putRequestBody ................................................ passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed
+* url URL ................................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+When method delete ........................................................ passed
+Then status 204 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="testpackage.testapi" name="update a user" time="0.640893">
+    <system-out>* url URL ................................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def first = response.data ............................................... passed
+Given path 'api/users', first.id .......................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == read(getRequestBody) ................................ passed
+* url URL ................................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users' .................................................... passed
+And request postRequest ................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* def id = response.id .................................................... passed
+* print 'created id is: ', id ............................................. passed
+* url URL ................................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+And request putRequestBody ................................................ passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed
+* url URL ................................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+When method delete ........................................................ passed
+Then status 204 ........................................................... passed
+* url URL ................................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+And request putRequestBody ................................................ passed
+When method patch ......................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

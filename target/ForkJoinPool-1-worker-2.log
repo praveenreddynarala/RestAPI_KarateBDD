@@ -1,0 +1,67 @@
+22:36:14.264 karate.env system property was: dev 
+22:36:14.455 [print]
+22:36:15.293 request:
+1 > POST https://reqres.in/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 34
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{
+  "name": "morpheus",
+  "job": "leader"
+}
+
+
+22:36:15.657 response time in milliseconds: 362.26
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5eda0d6bec210792-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 83
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 05 Nov 2020 22:36:14 GMT
+1 < Etag: W/"53-/4azssSctzS5+YK66O99SsmEF/M"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=f%2FaQUh4qnx3COthXrz1Y4XzXchv5Gh2btbAm8S69LnW8pb%2BB%2FQyydQOJaeiaPiFLQt55UXgc7OuEYie7TniADP0dY%2BO0mI202BM%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d238d0459dd20b4249e5ef29bf2340d791604615774; expires=Sat, 05-Dec-20 22:36:14 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 063c26b76d00000792e42f8000000001
+{
+  "name": "morpheus",
+  "job": "leader",
+  "id": "73",
+  "createdAt": "2020-11-05T22:36:14.091Z"
+}
+
+
+22:36:15.666 [print] created id is:  73
+61e2cdc311a7c44d196a9a3344e87871604615750; expires=Sat, 05-Dec-20 22:35:50 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1604615802
+1 < cf-request-id: 063c265cb90000e00b5209b000000001
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+
+22:35:52.630 [print] created id is:  11

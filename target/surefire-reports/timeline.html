@@ -12,8 +12,8 @@
   <body>
     <div id="visualization"></div>
     <script>
-var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-3"}]);
-var items = new vis.DataSet([{"id":1,"group":1,"content":"testapi[1:10]","start":1850,"end":3152,"title":"testapi[1:10] 05:30:01.850-05:30:03.152 get all users and then get the first user by id"},{"id":2,"group":1,"content":"testapi[2:23]","start":3174,"end":3731,"title":"testapi[2:23] 05:30:03.174-05:30:03.731 create a user and then get it by id"},{"id":3,"group":1,"content":"testapi[3:34]","start":3745,"end":4261,"title":"testapi[3:34] 05:30:03.745-05:30:04.261 update a user"},{"id":4,"group":1,"content":"testapi[4:42]","start":4276,"end":4801,"title":"testapi[4:42] 05:30:04.276-05:30:04.801 delete a user"},{"id":5,"group":1,"content":"testapi[5:49]","start":4818,"end":5460,"title":"testapi[5:49] 05:30:04.818-05:30:05.460 update a user"}]);
+var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-1"},{"id":2,"content":"ForkJoinPool-1-worker-2"},{"id":3,"content":"ForkJoinPool-1-worker-3"},{"id":4,"content":"ForkJoinPool-1-worker-4"},{"id":5,"content":"ForkJoinPool-1-worker-5"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"testapi[1:9]","start":2125,"end":3422,"title":"testapi[1:9] 01:00:02.125-01:00:03.422 get all users and then get the first user by id"},{"id":2,"group":2,"content":"testapi[2:22]","start":2125,"end":3367,"title":"testapi[2:22] 01:00:02.125-01:00:03.367 create a user and then get it by id"},{"id":3,"group":3,"content":"testapi[3:32]","start":2125,"end":3398,"title":"testapi[3:32] 01:00:02.125-01:00:03.398 update a user"},{"id":4,"group":4,"content":"testapi[4:39]","start":2125,"end":3358,"title":"testapi[4:39] 01:00:02.125-01:00:03.358 delete a user"},{"id":5,"group":5,"content":"testapi[5:45]","start":2125,"end":3361,"title":"testapi[5:45] 01:00:02.125-01:00:03.361 update a user"}]);
 var container = document.getElementById('visualization');
 var timeline = new vis.Timeline(container);
 timeline.setOptions({ groupOrder: 'content' });

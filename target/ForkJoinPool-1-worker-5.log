@@ -1,94 +1,43 @@
-18:15:30.274 karate.env system property was: dev 
-18:15:30.712 [print] {
-  "uuid": 583c27af-5477-45c6-84ad-c9fbbe8d9478
-}
-
-18:15:30.842 request:
-1 > POST https://reqres.in/api/users
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 34
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: reqres.in
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/12)
-{
-  "name": "morpheus",
-  "job": "leader"
-}
-
-
-18:15:31.483 response time in milliseconds: 636.97
-1 < 201
-1 < Access-Control-Allow-Origin: *
-1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 5ece6ebeff1fdbfb-LHR
-1 < Connection: keep-alive
-1 < Content-Length: 84
-1 < Content-Type: application/json; charset=utf-8
-1 < Date: Wed, 04 Nov 2020 12:45:31 GMT
-1 < Etag: W/"54-ILMgpmizARztlgcpkYPIKuOElk0"
-1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=4ay6V4pJ8RfU3noRAloRTCiyULnrKNUvZv4xUbUHfwGBhc31CFkB5vCEesDCBLZzUMmnsezZn6AQ8TfOMEFNNiJllZpVZTS0QzA%3D"}],"group":"cf-nel","max_age":604800}
-1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d93f70613865be612b0b61099a7b10a861604493931; expires=Fri, 04-Dec-20 12:45:31 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 < Via: 1.1 vegur
-1 < X-Powered-By: Express
-1 < cf-request-id: 0634e38b5d0000dbfbc90a1000000001
-{
-  "name": "morpheus",
-  "job": "leader",
-  "id": "225",
-  "createdAt": "2020-11-04T12:45:31.397Z"
-}
-
-
-18:15:31.494 [print] created id is:  225
-18:15:31.505 karate.env system property was: dev 
-18:15:31.513 [print] {
-  "uuid": f898ff84-5691-493e-8286-4d9217ecc8bd
-}
-
-18:15:31.525 request:
+22:36:14.257 karate.env system property was: dev 
+22:36:14.453 [print]
+22:36:15.292 request:
 1 > PATCH https://reqres.in/api/users/2
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Content-Length: 110
+1 > Content-Length: 103
 1 > Content-Type: text/plain; charset=UTF-8
 1 > Host: reqres.in
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/12)
-C:\Users\vpuranda\Eclipse\KarateTestScriptsSample/Resources/RequestAndResponses/Requests/PutRequestSample.json
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+C:\Automation\Karate_BDD\RestAPI_KarateBDD/src/test/resources/fixtures/requests/put_request_sample.json
 
-18:15:32.071 response time in milliseconds: 545.90
+22:36:15.660 response time in milliseconds: 366.57
 1 < 200
 1 < Access-Control-Allow-Origin: *
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 5ece6ec2af5e0792-LHR
+1 < CF-RAY: 5eda0d6be87e067a-LHR
 1 < Connection: keep-alive
 1 < Content-Length: 40
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Wed, 04 Nov 2020 12:45:32 GMT
-1 < Etag: W/"28-Ct1EEEMOTCyfItX1/j3b2IXnsWw"
+1 < Date: Thu, 05 Nov 2020 22:36:14 GMT
+1 < Etag: W/"28-NJvb+3armVldHfBByRzX3h8XxrE"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=A%2BauSCSJ%2FiAZMMsmtf9OlX04iMIGrJP3dvwdwL%2BEDu1DzXhPjK03jMN13haIyzMiMGtmtpXWIhCVKPxHTxA%2B6R%2BXs3R%2Fk2BBdUs%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=pZemPc%2FXznOjUtAl6ZqZvFH%2FAuRUWC9x856%2BVV2eY8kzYZV29HHQqb5OdB1i3Ksne2RWw8TBFPk0n5SWoSB3vV72fK93%2B3KqL9s%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=dc42aef917445a0e9e6785c7c0161b85c1604493931; expires=Fri, 04-Dec-20 12:45:31 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Set-Cookie: __cfduid=d2b4d8baf6f7bb1c754b85ada904bd4d21604615774; expires=Sat, 05-Dec-20 22:36:14 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-1 < cf-request-id: 0634e38da500000792f20e0000000001
+1 < cf-request-id: 063c26b76d0000067ad2855000000001
 {
-  "updatedAt": "2020-11-04T12:45:31.987Z"
+  "updatedAt": "2020-11-05T22:36:14.093Z"
 }
 
 
-   "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"
-  },
-  "ad": {
-    "company": "StatusCode Weekly",
-    "url": "http://statuscode.org/",
-    "text": "A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."
-  }
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 063c250f700000073a319e3000000001
+{
+  "updatedAt": "2020-11-05T22:34:25.555Z"
 }
 
 

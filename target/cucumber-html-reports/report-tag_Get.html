@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>testapi</td>
-            <td>04 Nov 2020, 18:28</td>
+            <td>05 Nov 2020, 22:36</td>
     </tr>
   </tbody>
 </table>
@@ -128,18 +128,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@Get</td>
-                    <td      class="passed"    >8</td>
+                    <td      class="passed"    >16</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">8</td>
+          <td class="total">16</td>
 
-          <td  class="passed"    >1</td>
+          <td  class="passed"    >2</td>
           <td >0</td>
-          <td class="total">1</td>
+          <td class="total">2</td>
 
-          <td class="duration" data-value="1266696900">1s 266ms</td>
+          <td class="duration" data-value="2371788900">2s 371ms</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -172,7 +172,7 @@ $(document).ready(function() {
 <div class="element">
       <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_testpackage-testapi-feature.html">testpackage/testapi.feature</a>
+      <a href="report-feature_examples-reqrestests-testapi-feature_1.html">examples/reqrestests/testapi.feature</a>
     </div>
   
   
@@ -182,7 +182,7 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">1s 266ms</span>
+  <span class="lead-duration duration">1s 240ms</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -223,7 +223,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">path 'api/users/2'</span>
   
-  <span class="lead-duration duration">004ms</span>
+  <span class="lead-duration duration">003ms</span>
 
   </div>
 
@@ -244,7 +244,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
   
-  <span class="lead-duration duration">731ms</span>
+  <span class="lead-duration duration">1s 156ms</span>
 
   </div>
 
@@ -259,34 +259,362 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>18:28:07.419 request:
+        <pre>22:36:15.291 request:
 1 &gt; GET https://reqres.in/api/users/2
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: reqres.in
-1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/12)
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
 
-18:28:08.051 response time in milliseconds: 627.29
+22:36:15.638 response time in milliseconds: 343.28
 1 &lt; 200
 1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Age: 3959
+1 &lt; Age: 1239
 1 &lt; CF-Cache-Status: HIT
-1 &lt; CF-RAY: 5ece81379dab066a-LHR
+1 &lt; CF-RAY: 5eda0d6be8c1e658-LHR
 1 &lt; Cache-Control: max-age=14400
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Wed, 04 Nov 2020 12:58:07 GMT
+1 &lt; Date: Thu, 05 Nov 2020 22:36:14 GMT
 1 &lt; Etag: W/&quot;173-1Z8bn0V7UjH6FK7NCaza1ccWXQk&quot;
 1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
 1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=TbtH%2BKVYG0klKsxotLA0Kx1c%2BG0HTCGIsRX2FOzI%2Fo932GXz5PPoi3%2FknfB8C98av8HpU%2FtkgRObt5zhaS%2BHiNKt4%2F5ehGhqCgA%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=5UZKKxDu7BEPI8WU8DwX%2BqKz0%2F0okrBC1B9iBM3GAe6zrPJTykbJvHzE0Q5sVSJc7JM3PSGAmULSyn1eaSZCMSVzAkrWPve4sxE%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=d0120d7b114a048c0e14c48d56e8e05de1604494687; expires=Fri, 04-Dec-20 12:58:07 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 &lt; Set-Cookie: __cfduid=dabdc1dba1904e9bb3b3c44b2f4ad9d9c1604615774; expires=Sat, 05-Dec-20 22:36:14 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Vary: Accept-Encoding
 1 &lt; Via: 1.1 vegur
 1 &lt; X-Powered-By: Express
-1 &lt; cf-request-id: 0634ef16bc0000066abf990000000001
+1 &lt; cf-request-id: 063c26b76c0000e6584e8e8000000001
+{
+  &quot;data&quot;: {
+    &quot;id&quot;: 2,
+    &quot;email&quot;: &quot;janet.weaver@reqres.in&quot;,
+    &quot;first_name&quot;: &quot;Janet&quot;,
+    &quot;last_name&quot;: &quot;Weaver&quot;,
+    &quot;avatar&quot;: &quot;https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg&quot;
+  },
+  &quot;ad&quot;: {
+    &quot;company&quot;: &quot;StatusCode Weekly&quot;,
+    &quot;url&quot;: &quot;http://statuscode.org/&quot;,
+    &quot;text&quot;: &quot;A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.&quot;
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def first = response.data</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'api/users', first.id</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">055ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>22:36:15.651 request:
+2 &gt; GET https://reqres.in/api/users/2
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Cookie: __cfduid=dabdc1dba1904e9bb3b3c44b2f4ad9d9c1604615774
+2 &gt; Host: reqres.in
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+22:36:15.704 response time in milliseconds: 51.78
+2 &lt; 200
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Age: 1239
+2 &lt; CF-Cache-Status: HIT
+2 &lt; CF-RAY: 5eda0d6c5836ce17-LHR
+2 &lt; Cache-Control: max-age=14400
+2 &lt; Connection: keep-alive
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Date: Thu, 05 Nov 2020 22:36:14 GMT
+2 &lt; Etag: W/&quot;173-1Z8bn0V7UjH6FK7NCaza1ccWXQk&quot;
+2 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+2 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=wZyILLUnEMBINaAjKS%2BHAAGKc93H8A%2BXcg62omKZSPoZkvzgUCKtSFKSGMSSw%2FLkaK4c03aaxGmZl2GOCFvgdDY8lP30iFLwvp8%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Vary: Accept-Encoding
+2 &lt; Via: 1.1 vegur
+2 &lt; X-Powered-By: Express
+2 &lt; cf-request-id: 063c26b7bc0000ce176b088000000001
+{
+  &quot;data&quot;: {
+    &quot;id&quot;: 2,
+    &quot;email&quot;: &quot;janet.weaver@reqres.in&quot;,
+    &quot;first_name&quot;: &quot;Janet&quot;,
+    &quot;last_name&quot;: &quot;Weaver&quot;,
+    &quot;avatar&quot;: &quot;https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg&quot;
+  },
+  &quot;ad&quot;: {
+    &quot;company&quot;: &quot;StatusCode Weekly&quot;,
+    &quot;url&quot;: &quot;http://statuscode.org/&quot;,
+    &quot;text&quot;: &quot;A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.&quot;
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == read(getRequestBody)</span>
+  
+  <span class="lead-duration duration">016ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_testpackage-testapi-feature_3.html">testpackage/testapi.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Get.html">@Get</a>
+      </div>
+
+  
+  <span class="lead-duration duration">1s 131ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">get all users and then get the first user by id</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'api/users/2'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1s 015ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>21:16:49.281 request:
+1 &gt; GET https://reqres.in/api/users/2
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+21:16:49.740 response time in milliseconds: 455.41
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 3405
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 5ed99910cd84c795-AMS
+1 &lt; Cache-Control: max-age=14400
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 05 Nov 2020 21:16:48 GMT
+1 &lt; Etag: W/&quot;173-1Z8bn0V7UjH6FK7NCaza1ccWXQk&quot;
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=1r2MKU9LmlBzbmabYyYLkB9eIwXyzLClvLRIpPRN7DgpxtFwWoCWFjZvjt7u%2F15GaFDKip%2FD23yejs2rFkOMlIKBu%2BywYrw3dDU%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d7185b4d2467dd6e0dd9111928436a7de1604611008; expires=Sat, 05-Dec-20 21:16:48 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; cf-request-id: 063bddfe820000c7950421c000000001
 {
   &quot;data&quot;: {
     &quot;id&quot;: 2,
@@ -358,7 +686,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">path 'api/users', first.id</span>
   
-  <span class="lead-duration duration">006ms</span>
+  <span class="lead-duration duration">003ms</span>
 
   </div>
 
@@ -379,7 +707,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
   
-  <span class="lead-duration duration">493ms</span>
+  <span class="lead-duration duration">098ms</span>
 
   </div>
 
@@ -390,38 +718,38 @@ $(document).ready(function() {
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
           <a>Doc string</a>
       </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>18:28:08.066 request:
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>21:16:49.756 request:
 2 &gt; GET https://reqres.in/api/users/2
 2 &gt; Accept-Encoding: gzip,deflate
 2 &gt; Connection: Keep-Alive
-2 &gt; Cookie: __cfduid=d0120d7b114a048c0e14c48d56e8e05de1604494687
+2 &gt; Cookie: __cfduid=d7185b4d2467dd6e0dd9111928436a7de1604611008
 2 &gt; Host: reqres.in
-2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/12)
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
 
-18:28:08.557 response time in milliseconds: 488.42
+21:16:49.850 response time in milliseconds: 94.81
 2 &lt; 200
 2 &lt; Access-Control-Allow-Origin: *
-2 &lt; Age: 3960
+2 &lt; Age: 3405
 2 &lt; CF-Cache-Status: HIT
-2 &lt; CF-RAY: 5ece813afe0edc07-LHR
+2 &lt; CF-RAY: 5ed999119d880b6b-AMS
 2 &lt; Cache-Control: max-age=14400
 2 &lt; Connection: keep-alive
 2 &lt; Content-Type: application/json; charset=utf-8
-2 &lt; Date: Wed, 04 Nov 2020 12:58:08 GMT
+2 &lt; Date: Thu, 05 Nov 2020 21:16:48 GMT
 2 &lt; Etag: W/&quot;173-1Z8bn0V7UjH6FK7NCaza1ccWXQk&quot;
 2 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
 2 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=VKUtJc9Eo4HnGJQpyNX7rAurFlVrZH9RJnipfFJtsDRfbPbmx5WKBq59pPmsEypHieHLDTeWz1IrE%2FToGLW8KhusuKr5CqDZgko%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=Bfip9R0YUkFz98TtTaEzOLW4p6%2FMGSJxpao6Dcqjtz3B6ugSBRj%2BgXk2P%2BwElVzUYQDDER0qtTxGRJQKDVgWKBjdkhGNrQw0kVY%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 2 &lt; Server: cloudflare
 2 &lt; Transfer-Encoding: chunked
 2 &lt; Vary: Accept-Encoding
 2 &lt; Via: 1.1 vegur
 2 &lt; X-Powered-By: Express
-2 &lt; cf-request-id: 0634ef18df0000dc075392f000000001
+2 &lt; cf-request-id: 063bddfefe00000b6b37be9000000001
 {
   &quot;data&quot;: {
     &quot;id&quot;: 2,
@@ -472,7 +800,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response == read(getRequestBody)</span>
   
-  <span class="lead-duration duration">025ms</span>
+  <span class="lead-duration duration">007ms</span>
 
   </div>
 

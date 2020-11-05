@@ -1,5 +1,5 @@
-<testsuite failures="0" name="testpackage/testapi.feature" skipped="0" tests="5" time="3.52198">
-  <testcase classname="testpackage.testapi" name="get all users and then get the first user by id" time="1.285725">
+<testsuite failures="0" name="testpackage/testapi.feature" skipped="0" tests="5" time="5.496063">
+  <testcase classname="testpackage.testapi" name="get all users and then get the first user by id" time="1.162038">
     <system-out>* url URL ................................................................. passed
 * print utils ............................................................. passed
 * def postRequest = read(postRequestBody) ................................. passed
@@ -12,7 +12,7 @@ When method get ........................................................... pass
 Then status 200 ........................................................... passed
 And match response == read(getRequestBody) ................................ passed</system-out>
   </testcase>
-  <testcase classname="testpackage.testapi" name="create a user and then get it by id" time="0.555011">
+  <testcase classname="testpackage.testapi" name="create a user and then get it by id" time="1.093405">
     <system-out>* url URL ................................................................. passed
 * print utils ............................................................. passed
 * def postRequest = read(postRequestBody) ................................. passed
@@ -34,7 +34,7 @@ Then status 201 ........................................................... pass
 * def id = response.id .................................................... passed
 * print 'created id is: ', id ............................................. passed</system-out>
   </testcase>
-  <testcase classname="testpackage.testapi" name="update a user" time="0.515653">
+  <testcase classname="testpackage.testapi" name="update a user" time="1.071236">
     <system-out>* url URL ................................................................. passed
 * print utils ............................................................. passed
 * def postRequest = read(postRequestBody) ................................. passed
@@ -63,7 +63,7 @@ And request putRequestBody ................................................ pass
 When method put ........................................................... passed
 Then status 200 ........................................................... passed</system-out>
   </testcase>
-  <testcase classname="testpackage.testapi" name="delete a user" time="0.524698">
+  <testcase classname="testpackage.testapi" name="delete a user" time="1.07568">
     <system-out>* url URL ................................................................. passed
 * print utils ............................................................. passed
 * def postRequest = read(postRequestBody) ................................. passed
@@ -98,7 +98,7 @@ Given path 'api/users/2' .................................................. pass
 When method delete ........................................................ passed
 Then status 204 ........................................................... passed</system-out>
   </testcase>
-  <testcase classname="testpackage.testapi" name="update a user" time="0.640893">
+  <testcase classname="testpackage.testapi" name="update a user" time="1.093704">
     <system-out>* url URL ................................................................. passed
 * print utils ............................................................. passed
 * def postRequest = read(postRequestBody) ................................. passed

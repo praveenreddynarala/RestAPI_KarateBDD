@@ -1,4 +1,4 @@
-examples\users\Random.class
-testpackage\TestApiRunner.class
-examples\ExamplesTest.class
-examples\users\UsersRunner.class
+utils\GlobalApiRunner.class
+com\examples\ExamplesTest.class
+com\examples\reqrestests\TestApiTestRunner.class
+com\examples\jsonplaceholder\UsersTestRunner.class

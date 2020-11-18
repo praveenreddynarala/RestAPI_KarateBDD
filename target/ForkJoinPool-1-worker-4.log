@@ -1,41 +1,33 @@
-22:36:14.260 karate.env system property was: dev 
-22:36:14.456 [print]
-22:36:15.291 request:
-1 > DELETE https://reqres.in/api/users/2
+11:35:05.204 karate.env system property was :::  users 
+11:35:05.220 Karate Testing Environment :::  DEV 
+11:35:05.220 [print]
+11:35:05.220 request:
+1 > PUT https://reqres.in/api/users/2
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
+1 > Content-Length: 41
+1 > Content-Type: text/plain; charset=UTF-8
 1 > Host: reqres.in
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+fixtures/requests/put_request_sample.json
 
-22:36:15.656 response time in milliseconds: 364.08
-1 < 204
+11:35:05.860 response time in milliseconds: 631.45
+1 < 200
 1 < Access-Control-Allow-Origin: *
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 5eda0d6bdf56ce3b-LHR
+1 < CF-RAY: 5f4162d82846f413-LHR
 1 < Connection: keep-alive
-1 < Content-Length: 0
-1 < Date: Thu, 05 Nov 2020 22:36:14 GMT
-1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Content-Length: 40
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 18 Nov 2020 11:35:06 GMT
+1 < Etag: W/"28-rUPsuTCOAFPtKBxVafNVx+rbqx0"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=iptF4eMQMA4RKB9r8X7rdbmY2c%2FvIrNsg%2FD70ij%2FOkX%2BHZOM311Qe%2BWxRVl2Qe8vlYFmlM6Ak9qEqZtJgoRPWft6xTp5h5LUak4%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=3zLM2IwaSAD4kEfXrujLSyRTvetR9Vj9ROqQqWnJE%2Bw56%2BRgChlI3ox0IQKKSmfpdRRrr4%2FUIE7h9fz%2FyadlRVgTmLYemNR%2FV34%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d158b997f336f2f9efe3e17a493d639c31604615774; expires=Sat, 05-Dec-20 22:36:14 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Set-Cookie: __cfduid=d688c0e14f27e1be2b41e1b435c8623271605699306; expires=Fri, 18-Dec-20 11:35:06 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-1 < cf-request-id: 063c26b76b0000ce3b291d8000000001
-
-quest-id: 063c250f700000e6645a2f2000000001
-1 < etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
-1 < via: 1.1 vegur
-1 < x-powered-by: Express
-
-a63cdeb1db3ab1b2254e221604615616; expires=Sat, 05-Dec-20 22:33:36 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 < Via: 1.1 vegur
-1 < X-Powered-By: Express
-1 < cf-request-id: 063c245061000006724e0a6000000001
-{
-  "updatedAt": "2020-11-05T22:33:36.637Z"
-}
-
+1 < cf-request-id: 067cbc1b1d0000f41328219000000001
+{"updatedAt":"2020-11-18T11:35:06.302Z"}
 

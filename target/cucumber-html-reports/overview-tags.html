@@ -49,28 +49,28 @@ $(document).ready(function() {
   $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@Delete",  "@Get",  "@Patch",  "@Post",  "@Put",  "@Tag1", ] ,
+        labels:  [ "@Delete",  "@Get",  "@Patch",  "@Post",  "@Put", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 100.00,  100.00,  100.00,  100.00,  87.50,  100.00, ]             },
+                data:  [ 100.00,  85.71,  100.00,  100.00,  100.00, ]             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  12.50,  0.00, ]             },
+                data:  [ 0.00,  14.29,  0.00,  0.00,  0.00, ]             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ]             },
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00, ]             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ]             },
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00, ]             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ]             }
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00, ]             }
         ]
     };
 
@@ -129,7 +129,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>testapi</td>
-            <td>05 Nov 2020, 22:36</td>
+            <td>18 Nov 2020, 11:35</td>
     </tr>
   </tbody>
 </table>
@@ -193,6 +193,57 @@ $(document).ready(function() {
           <tr>
         <td class="tagname"><a href="report-tag_Delete.html">@Delete</a></td>
         
+        <td      class="passed"    >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="629402000">629ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_Get.html">@Get</a></td>
+        
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >1</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">7</td>
+
+        <td  class="passed"    >1</td>
+        <td  class="failed"    >1</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="1478448000">1s 478ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_Patch.html">@Patch</a></td>
+        
+        <td      class="passed"    >4</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">4</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="615596500">615ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_Post.html">@Post</a></td>
+        
         <td      class="passed"    >6</td>
         <td >0</td>
         <td >0</td>
@@ -200,130 +251,62 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">6</td>
 
-        <td  class="passed"    >2</td>
+        <td  class="passed"    >1</td>
         <td >0</td>
-        <td class="total">2</td>
+        <td class="total">1</td>
 
-        <td class="duration" data-value="2213996800">2s 213ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_Get.html">@Get</a></td>
-        
-        <td      class="passed"    >16</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">16</td>
-
-        <td  class="passed"    >2</td>
-        <td >0</td>
-        <td class="total">2</td>
-
-        <td class="duration" data-value="2371788900">2s 371ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_Patch.html">@Patch</a></td>
-        
-        <td      class="passed"    >8</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">8</td>
-
-        <td  class="passed"    >2</td>
-        <td >0</td>
-        <td class="total">2</td>
-
-        <td class="duration" data-value="2233155300">2s 233ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_Post.html">@Post</a></td>
-        
-        <td      class="passed"    >12</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">12</td>
-
-        <td  class="passed"    >2</td>
-        <td >0</td>
-        <td class="total">2</td>
-
-        <td class="duration" data-value="2223189700">2s 223ms</td>
+        <td class="duration" data-value="632016800">632ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
         <td class="tagname"><a href="report-tag_Put.html">@Put</a></td>
         
-        <td      class="passed"    >7</td>
-        <td      class="failed"    >1</td>
+        <td      class="passed"    >4</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">8</td>
+        <td >0</td>
+        <td class="total">4</td>
 
         <td  class="passed"    >1</td>
-        <td  class="failed"    >1</td>
-        <td class="total">2</td>
+        <td >0</td>
+        <td class="total">1</td>
 
-        <td class="duration" data-value="2248689200">2s 248ms</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-tag_Tag1.html">@Tag1</a></td>
-        
-        <td      class="passed"    >14</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">14</td>
-
-        <td  class="passed"    >2</td>
-        <td >0</td>
-        <td class="total">2</td>
-
-        <td class="duration" data-value="2126070100">2s 126ms</td>
+        <td class="duration" data-value="637842900">637ms</td>
         <td class="passed">Passed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
+      <td>5</td>
+            <td>23</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>24</td>
+
+      <td>5</td>
+      <td>1</td>
       <td>6</td>
-            <td>63</td>
-      <td>1</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>64</td>
 
-      <td>11</td>
-      <td>1</td>
-      <td>12</td>
-
-      <td class="duration">13s 416ms</td>
+      <td class="duration">3s 993ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>98.44%</td>
-      <td>1.56%</td>
+            <td>95.83%</td>
+      <td>4.17%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>91.67%</td>
-      <td>8.33%</td>
+      <td>83.33%</td>
+      <td>16.67%</td>
       <td></td>
       <td></td>
-      <td>75.00%</td>
+      <td>0.00%</td>
     </tr>
   </tfoot>
 </table>

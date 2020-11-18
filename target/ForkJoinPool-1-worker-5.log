@@ -1,43 +1,28 @@
-22:36:14.257 karate.env system property was: dev 
-22:36:14.453 [print]
-22:36:15.292 request:
-1 > PATCH https://reqres.in/api/users/2
+11:35:05.220 karate.env system property was :::  users 
+11:35:05.220 Karate Testing Environment :::  DEV 
+11:35:05.220 [print]
+11:35:05.235 request:
+1 > DELETE https://reqres.in/api/users/2
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Content-Length: 103
-1 > Content-Type: text/plain; charset=UTF-8
 1 > Host: reqres.in
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
-C:\Automation\Karate_BDD\RestAPI_KarateBDD/src/test/resources/fixtures/requests/put_request_sample.json
 
-22:36:15.660 response time in milliseconds: 366.57
-1 < 200
+11:35:05.845 response time in milliseconds: 614.49
+1 < 204
 1 < Access-Control-Allow-Origin: *
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 5eda0d6be87e067a-LHR
+1 < CF-RAY: 5f4162d83ef706d1-LHR
 1 < Connection: keep-alive
-1 < Content-Length: 40
-1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 05 Nov 2020 22:36:14 GMT
-1 < Etag: W/"28-NJvb+3armVldHfBByRzX3h8XxrE"
+1 < Content-Length: 0
+1 < Date: Wed, 18 Nov 2020 11:35:06 GMT
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=pZemPc%2FXznOjUtAl6ZqZvFH%2FAuRUWC9x856%2BVV2eY8kzYZV29HHQqb5OdB1i3Ksne2RWw8TBFPk0n5SWoSB3vV72fK93%2B3KqL9s%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=EAK6MeNcDXBnBXdVv3VLaOVcXzakscJd5zVj5P95HV37cFikuEBCK1kO0wnMDqZdsqGNlZWakWRYoqOXmQ0gysZOHKwK4D3LHxE%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d2b4d8baf6f7bb1c754b85ada904bd4d21604615774; expires=Sat, 05-Dec-20 22:36:14 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Set-Cookie: __cfduid=dfe86c529b89cb09ff97daca9319e68f51605699306; expires=Fri, 18-Dec-20 11:35:06 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-1 < cf-request-id: 063c26b76d0000067ad2855000000001
-{
-  "updatedAt": "2020-11-05T22:36:14.093Z"
-}
-
-
-1 < Via: 1.1 vegur
-1 < X-Powered-By: Express
-1 < cf-request-id: 063c250f700000073a319e3000000001
-{
-  "updatedAt": "2020-11-05T22:34:25.555Z"
-}
-
+1 < cf-request-id: 067cbc1b21000006d1083e4000000001
 

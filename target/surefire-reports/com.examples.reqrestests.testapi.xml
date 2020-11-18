@@ -1,0 +1,201 @@
+<testsuite failures="1"
+           name="com/examples/reqrestests/testapi.feature"
+           skipped="0"
+           tests="6"
+           time="4.016964">
+   <testcase classname="com.examples.reqrestests.testapi"
+             name="Get all users and validate status code"
+             time="0.736143">
+      <system-out>* url baseURL ............................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+   </testcase>
+   <testcase classname="com.examples.reqrestests.testapi"
+             name="Get specific user and validate its response"
+             time="0.748961">
+      <failure message="testapi.feature:19 - path: $, actual: {&#34;data&#34;:{&#34;last_name&#34;:&#34;Weaver&#34;,&#34;id&#34;:2,&#34;avatar&#34;:&#34;https:\/\/s3.amazonaws.com\/uifaces\/faces\/twitter\/josephstein\/128.jpg&#34;,&#34;first_name&#34;:&#34;Janet&#34;,&#34;email&#34;:&#34;janet.weaver@reqres.in&#34;},&#34;support&#34;:{&#34;text&#34;:&#34;To keep ReqRes free, contributions towards server costs are appreciated!&#34;,&#34;url&#34;:&#34;https:\/\/reqres.in\/#support-heading&#34;}}, expected: {data={id=2, email=janet.weaver@reqres.in, first_name=Janet, last_name=Weaver, avatar=https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg}, ad={company=StatusCode Weekly, url=http://statuscode.org/, text=A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.}}, reason: all key-values did not match, expected has un-matched keys: [ad]">* url baseURL ............................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url baseURL ............................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == read(getRequestBody) ................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: testapi.feature:19 - path: $, actual: {"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/s3.amazonaws.com\/uifaces\/faces\/twitter\/josephstein\/128.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}, expected: {data={id=2, email=janet.weaver@reqres.in, first_name=Janet, last_name=Weaver, avatar=https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg}, ad={company=StatusCode Weekly, url=http://statuscode.org/, text=A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.}}, reason: all key-values did not match, expected has un-matched keys: [ad]&#xD;
+	at ✽.And match response == read(getRequestBody) (testapi.feature:19)</failure>
+   </testcase>
+   <testcase classname="com.examples.reqrestests.testapi"
+             name="create a user and then get it by id"
+             time="0.635524">
+      <system-out>* url baseURL ............................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url baseURL ............................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == read(getRequestBody) ................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: testapi.feature:19 - path: $, actual: {"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/s3.amazonaws.com\/uifaces\/faces\/twitter\/josephstein\/128.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}, expected: {data={id=2, email=janet.weaver@reqres.in, first_name=Janet, last_name=Weaver, avatar=https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg}, ad={company=StatusCode Weekly, url=http://statuscode.org/, text=A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.}}, reason: all key-values did not match, expected has un-matched keys: [ad]&#xD;
+	at ✽.And match response == read(getRequestBody) (testapi.feature:19)&#xD;
+
+* url baseURL ............................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users' .................................................... passed
+And request postRequest ................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* def id = response.id .................................................... passed
+* print 'created id is: ', id ............................................. passed</system-out>
+   </testcase>
+   <testcase classname="com.examples.reqrestests.testapi"
+             name="update a user"
+             time="0.641315">
+      <system-out>* url baseURL ............................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url baseURL ............................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == read(getRequestBody) ................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: testapi.feature:19 - path: $, actual: {"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/s3.amazonaws.com\/uifaces\/faces\/twitter\/josephstein\/128.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}, expected: {data={id=2, email=janet.weaver@reqres.in, first_name=Janet, last_name=Weaver, avatar=https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg}, ad={company=StatusCode Weekly, url=http://statuscode.org/, text=A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.}}, reason: all key-values did not match, expected has un-matched keys: [ad]&#xD;
+	at ✽.And match response == read(getRequestBody) (testapi.feature:19)&#xD;
+
+* url baseURL ............................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users' .................................................... passed
+And request postRequest ................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* def id = response.id .................................................... passed
+* print 'created id is: ', id ............................................. passed
+* url baseURL ............................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+And request putRequestBody ................................................ passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+   </testcase>
+   <testcase classname="com.examples.reqrestests.testapi"
+             name="delete a user"
+             time="0.633491">
+      <system-out>* url baseURL ............................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url baseURL ............................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == read(getRequestBody) ................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: testapi.feature:19 - path: $, actual: {"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/s3.amazonaws.com\/uifaces\/faces\/twitter\/josephstein\/128.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}, expected: {data={id=2, email=janet.weaver@reqres.in, first_name=Janet, last_name=Weaver, avatar=https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg}, ad={company=StatusCode Weekly, url=http://statuscode.org/, text=A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.}}, reason: all key-values did not match, expected has un-matched keys: [ad]&#xD;
+	at ✽.And match response == read(getRequestBody) (testapi.feature:19)&#xD;
+
+* url baseURL ............................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users' .................................................... passed
+And request postRequest ................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* def id = response.id .................................................... passed
+* print 'created id is: ', id ............................................. passed
+* url baseURL ............................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+And request putRequestBody ................................................ passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed
+* url baseURL ............................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+When method delete ........................................................ passed
+Then status 204 ........................................................... passed</system-out>
+   </testcase>
+   <testcase classname="com.examples.reqrestests.testapi"
+             name="update a user"
+             time="0.621528">
+      <system-out>* url baseURL ............................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url baseURL ............................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == read(getRequestBody) ................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: testapi.feature:19 - path: $, actual: {"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/s3.amazonaws.com\/uifaces\/faces\/twitter\/josephstein\/128.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}, expected: {data={id=2, email=janet.weaver@reqres.in, first_name=Janet, last_name=Weaver, avatar=https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg}, ad={company=StatusCode Weekly, url=http://statuscode.org/, text=A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.}}, reason: all key-values did not match, expected has un-matched keys: [ad]&#xD;
+	at ✽.And match response == read(getRequestBody) (testapi.feature:19)&#xD;
+
+* url baseURL ............................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users' .................................................... passed
+And request postRequest ................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* def id = response.id .................................................... passed
+* print 'created id is: ', id ............................................. passed
+* url baseURL ............................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+And request putRequestBody ................................................ passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed
+* url baseURL ............................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+When method delete ........................................................ passed
+Then status 204 ........................................................... passed
+* url baseURL ............................................................. passed
+* print utils ............................................................. passed
+* def postRequest = read(postRequestBody) ................................. passed
+Given path 'api/users/2' .................................................. passed
+And request putRequestBody ................................................ passed
+When method patch ......................................................... passed
+Then status 200 ........................................................... passed</system-out>
+   </testcase>
+</testsuite>

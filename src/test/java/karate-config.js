@@ -1,36 +1,41 @@
 function fn() {    
     var system = Java.type('java.lang.System');
-    var env = karate.env; // get system property 'karate.env'
-    var dir = karate.properties['karate.dir'];
+    var appType = system.getProperty("karate.app")
+    var env = karate.env;
     var app = karate.properties['karate.app'];
 
-    karate.log('karate.env system property was:', env);
-//    karate.log('karate.dir system property was:', dir);
-//    karate.log('karate.app system property was:', app);
+    karate.log('karate.env system property was ::: ', appType);
 
-    //  karate.configure('ssl',true);
-    karate.configure('logPrettyRequest',true);
-    karate.configure('logPrettyResponse',true);
-
-    if (!env) {
-        env = 'dev';
-    }
     var config = {
-        env: env,
-        myVarName: 'someValue'
+        ymlFile : karate.read('classpath:bdd-config.yaml')
+    };
+
+    if(!env) {
+        env = config.ymlFile.testing.environment;
     }
-    if (env === 'dev') {
-        config.URL='https://reqres.in'
-    } else if (env == 'e2e') {
-        // customize
-    }
+
+    karate.log('Karate Testing Environment ::: ', env);
+
+    if (env === 'DEV'){
+        config.baseURL = config.ymlFile.dev.url; //Get url
+
+        config.postRequestBody= config.ymlFile.dev.requests.post_request; //Get Post Request
+        config.putRequestBody= config.ymlFile.dev.requests.put_request; //Get Put Request
+        config.getRequestBody= config.ymlFile.dev.responses.sample_response; //Get Response
+    } else if (env == 'QA'){
+        config.baseURL = config.ymlFile.dev.url; //Get url
+        config.postRequestBody= config.ymlFile.dev.requests.post_request; //Get Post Request
+        config.putRequestBody= config.ymlFile.dev.requests.put_request; //Get Put Request
+        config.getRequestBody= config.ymlFile.dev.responses.sample_response; //Get Response
+    } else if (env == 'SIT'){
+         config.baseURL = config.ymlFile.dev.url; //Get url
+         config.postRequestBody= config.ymlFile.dev.requests.post_request; //Get Post Request
+         config.putRequestBody= config.ymlFile.dev.requests.put_request; //Get Put Request
+         config.getRequestBody= config.ymlFile.dev.responses.sample_response; //Get Response
+     }
 
     karate.configure('connectTimeout',50000);
     karate.configure('readTimeout',50000);
-
-    config.postRequestBody= dir+'/src/test/resources/fixtures/requests/post_request_sample.json';
-    config.putRequestBody= dir+'/src/test/resources/fixtures/requests/put_request_sample.json';
-    config.getRequestBody= dir+'/src/test/resources/fixtures/responses/sample.json';
 
     config.dyUuid = function() {
         return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {

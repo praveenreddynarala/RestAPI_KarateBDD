@@ -1,82 +1,67 @@
-22:36:14.262 karate.env system property was: dev 
-22:36:14.453 [print]
-22:36:15.292 request:
-1 > PUT https://reqres.in/api/users/2
+11:35:05.189 karate.env system property was :::  users 
+11:35:05.189 Karate Testing Environment :::  DEV 
+11:35:05.204 [print]
+11:35:05.204 request:
+1 > POST https://reqres.in/api/users
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Content-Length: 103
+1 > Content-Length: 34
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"name":"morpheus","job":"leader"}
+
+11:35:05.829 response time in milliseconds: 623.21
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5f4162d80b35ce4f-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 84
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 18 Nov 2020 11:35:06 GMT
+1 < Etag: W/"54-iGqg2EfzcaOmwpcd3Sh34kT+QKo"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=sVST27UeKHJWLwg4fZVaawZiXyO%2F6DITPEajc3J0PXY543qW8V7mMFX0DI6HOsKmMGyoYOcGTYm58vO0V%2BqcAxjSIsfucuHdn7s%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dd1808323e438dd3bf319e003fe16155c1605699306; expires=Fri, 18-Dec-20 11:35:06 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 067cbc1b050000ce4f199bd000000001
+{"name":"morpheus","job":"leader","id":"688","createdAt":"2020-11-18T11:35:06.284Z"}
+
+11:35:05.829 [print] created id is:  688
+11:35:05.860 karate.env system property was :::  users 
+11:35:05.860 Karate Testing Environment :::  DEV 
+11:35:05.860 [print]
+11:35:05.876 request:
+1 > PATCH https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 41
 1 > Content-Type: text/plain; charset=UTF-8
 1 > Host: reqres.in
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
-C:\Automation\Karate_BDD\RestAPI_KarateBDD/src/test/resources/fixtures/requests/put_request_sample.json
+fixtures/requests/put_request_sample.json
 
-22:36:15.693 response time in milliseconds: 380.13
-1 < 503
+11:35:06.485 response time in milliseconds: 611.08
+1 < 200
+1 < Access-Control-Allow-Origin: *
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 5eda0d6bde240682-LHR
-1 < Cache-Control: no-cache, no-store
+1 < CF-RAY: 5f4162dc3eaa0091-LHR
 1 < Connection: keep-alive
-1 < Content-Type: text/html; charset=utf-8
-1 < Date: Thu, 05 Nov 2020 22:36:14 GMT
+1 < Content-Length: 40
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 18 Nov 2020 11:35:06 GMT
+1 < Etag: W/"28-Lfd2sYvac0+u0Mgyd4ezKPvsiwg"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=rxbf8JPRIAeeJBwXuicNJP1PdKztqp9oLk9Nqm%2F3Lckt%2FMlDB3pdcWXhXA7Fy5BnXJByhVt4Z3pm8Wh9EXD6diTHLsNyQndgA%2Fs%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=WMkL7RwiqUq6aIZxVHdyjSrohWhSkrJtNpBIinHMwGcZss%2BFgNMj29rDEw0j8jFkZvPE7uFEEYcowyAJw7eHbe4iw2PDKcX3EqE%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d6394b9e046b3194402918e85fa2904151604615774; expires=Sat, 05-Dec-20 22:36:14 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 < Transfer-Encoding: chunked
-1 < Vary: Accept-Encoding
-1 < cf-request-id: 063c26b76c00000682b2176000000001
-<!DOCTYPE html>
-	<html>
-	  <head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta charset="utf-8">
-		<title>Application Error</title>
-		<style media="screen">
-		  html,body,iframe {
-			margin: 0;
-			padding: 0;
-		  }
-		  html,body {
-			height: 100%;
-			overflow: hidden;
-		  }
-		  iframe {
-			width: 100%;
-			height: 100%;
-			border: 0;
-		  }
-		</style>
-	  </head>
-	  <body>
-		<iframe src="//www.herokucdn.com/error-pages/application-error.html"></iframe>
-	  </body>
-	</html>
+1 < Set-Cookie: __cfduid=dd12d39f0baea7379f77cdff0fcf67e411605699306; expires=Fri, 18-Dec-20 11:35:06 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 067cbc1d9f00000091fabeb000000001
+{"updatedAt":"2020-11-18T11:35:06.939Z"}
 
-22:36:15.695 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 6; The element type "meta" must be terminated by the matching end-tag "</meta>".
-22:36:15.696 status code was: 503, expected: 200, response time: 380, url: https://reqres.in/api/users/2, response: <!DOCTYPE html>
-	<html>
-	  <head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta charset="utf-8">
-		<title>Application Error</title>
-		<style media="screen">
-		  html,body,iframe {
-			margin: 0;
-			padding: 0;
-		  }
-		  html,body {
-			height: 100%;
-			overflow: hidden;
-		  }
-		  iframe {
-			width: 100%;
-			height: 100%;
-			border: 0;
-		  }
-		</style>
-	  </head>
-	  <body>
-		<iframe src="//www.herokucdn.com/error-pages/application-error.html"></iframe>
-	  </body>
-	</html>

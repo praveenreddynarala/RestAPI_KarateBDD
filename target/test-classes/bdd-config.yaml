@@ -1,0 +1,36 @@
+# =========================================================================================================
+# Karate BDD Test Automation
+# Global Configuration Changes
+# ==========================================================================================================
+
+# ==========================================================================================================
+# Test Environment (DEV/QA/SIT)
+# ==========================================================================================================
+testing:
+  environment: DEV
+# ==========================================================================================================
+
+# ==========================================================================================================
+# Request, Responses
+# ==========================================================================================================
+dev:
+  url: https://reqres.in
+  requests:
+    post_request: fixtures/requests/post_request_sample.json
+    put_request: fixtures/requests/put_request_sample.json
+  responses:
+    sample_response: fixtures/responses/sample.json
+qa:
+  url: https://reqres.in
+  requests:
+    post_request: fixtures/requests/post_request_sample.json
+    put_request: fixtures/requests/put_request_sample.json
+  responses:
+    sample_response: fixtures/responses/sample.json
+sit:
+  url: https://reqres.in
+  requests:
+    post_request: fixtures/requests/post_request_sample.json
+    put_request: fixtures/requests/put_request_sample.json
+  responses:
+    sample_response: fixtures/responses/sample.json

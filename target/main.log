@@ -1,29 +1,30 @@
-21:28:41.380 karate.env system property was:  
-21:28:42.343 request:
+11:34:56.066 karate.env system property was :::   
+11:34:56.191 Karate Testing Environment :::  DEV 
+11:34:57.003 request:
 1 > GET https://jsonplaceholder.typicode.com/users
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: jsonplaceholder.typicode.com
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
 
-21:28:42.732 response time in milliseconds: 370.30
+11:34:58.206 response time in milliseconds: 1191.18
 1 < 200
 1 < Access-Control-Allow-Credentials: true
-1 < Age: 27942
+1 < Age: 21040
 1 < CF-Cache-Status: HIT
-1 < CF-RAY: 5ed9aa78affc05dc-FRA
+1 < CF-RAY: 5f4162a86fc53260-FRA
 1 < Cache-Control: max-age=43200
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 05 Nov 2020 21:28:41 GMT
+1 < Date: Wed, 18 Nov 2020 11:34:58 GMT
 1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < Expires: -1
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
 1 < Pragma: no-cache
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=cpAuLNkUOfXjlQYiUlRskBtzpMLNMgG%2BmHGZT98%2BLzWZg9yGhLYCWAbFGcTJibCwhnWKOAzvZwDe2nnvS4lPvlYyeQb8RRyPdeeoM2S4Gn3UWwyUHdSF1mnrnseK"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=P%2BpBpkAs3ck%2Bj5D3xtBHtRFQQy%2FUjdfujW2HODUYdPTph8zqBNSTUu3vFNgeAJUQ7PQ4SRZ8iwt6JXNiojaf0Z1wPslhT8p5MXQUPlEFox50AjF46IfLciBnq9fX"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d6d97462b9bc4d70ce9ae8fe667f9cc671604611721; expires=Sat, 05-Dec-20 21:28:41 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Set-Cookie: __cfduid=d2fd5f33d4d2a4cb2910109950cedc9371605699298; expires=Fri, 18-Dec-20 11:34:58 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
 1 < Transfer-Encoding: chunked
 1 < Vary: Origin, Accept-Encoding
 1 < Via: 1.1 vegur
@@ -32,7 +33,7 @@
 1 < X-Ratelimit-Limit: 1000
 1 < X-Ratelimit-Remaining: 998
 1 < X-Ratelimit-Reset: 1604555016
-1 < cf-request-id: 063be8df6e000005dca038a000000001
+1 < cf-request-id: 067cbbfd4000003260a3a19000000001
 [
   {
     "id": 1,
@@ -266,31 +267,30 @@
   }
 ]
 
-
-21:28:42.788 request:
+11:34:58.237 request:
 2 > GET https://jsonplaceholder.typicode.com/users/1
 2 > Accept-Encoding: gzip,deflate
 2 > Connection: Keep-Alive
-2 > Cookie: __cfduid=d6d97462b9bc4d70ce9ae8fe667f9cc671604611721
+2 > Cookie: __cfduid=d2fd5f33d4d2a4cb2910109950cedc9371605699298
 2 > Host: jsonplaceholder.typicode.com
 2 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
 
-21:28:42.874 response time in milliseconds: 81.20
+11:34:58.940 response time in milliseconds: 709.83
 2 < 200
 2 < Access-Control-Allow-Credentials: true
-2 < Age: 20202
+2 < Age: 16387
 2 < CF-Cache-Status: HIT
-2 < CF-RAY: 5ed9aa79fba4dfdf-FRA
+2 < CF-RAY: 5f4162ad2a39dfd3-FRA
 2 < Cache-Control: max-age=43200
 2 < Connection: keep-alive
 2 < Content-Type: application/json; charset=utf-8
-2 < Date: Thu, 05 Nov 2020 21:28:41 GMT
+2 < Date: Wed, 18 Nov 2020 11:34:59 GMT
 2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
 2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 2 < Expires: -1
 2 < NEL: {"report_to":"cf-nel","max_age":604800}
 2 < Pragma: no-cache
-2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=bg%2FuCMRQyulxXjKBGeVL8iOO%2Bzt033zjAyNe7wZ9GGLQs1nIxYOEqD7bLz%2B0MuBFAffVHiaVnlvAX6RSXZM6lTAqtIjeD7BnZvwnKi5ziTUqtVtFMjOEWgNuZNxI"}],"group":"cf-nel","max_age":604800}
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=AMoIX9HnfYD69K0WnuasouZJee82RObBozOeHqO38RpQYjJTDVA5AnQQBlUgBxFNdHKbIGTRs0Q4j4CHjvR6iaEAM5Z7G2VD3gpxBVfjJ8D0q5pzec6LFMbvqpU6"}],"group":"cf-nel","max_age":604800}
 2 < Server: cloudflare
 2 < Transfer-Encoding: chunked
 2 < Vary: Origin, Accept-Encoding
@@ -299,8 +299,8 @@
 2 < X-Powered-By: Express
 2 < X-Ratelimit-Limit: 1000
 2 < X-Ratelimit-Remaining: 999
-2 < X-Ratelimit-Reset: 1604388026
-2 < cf-request-id: 063be8e0390000dfdf0e8ba000000001
+2 < X-Ratelimit-Reset: 1605654113
+2 < cf-request-id: 067cbc003d0000dfd3acb91000000001
 {
   "id": 1,
   "name": "Leanne Graham",
@@ -325,9 +325,9 @@
   }
 }
 
-
-21:28:42.890 karate.env system property was:  
-21:28:42.903 request:
+11:34:58.971 karate.env system property was :::   
+11:34:58.987 Karate Testing Environment :::  DEV 
+11:34:59.003 request:
 1 > POST https://jsonplaceholder.typicode.com/users
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -335,47 +335,36 @@
 1 > Content-Type: application/json; charset=UTF-8
 1 > Host: jsonplaceholder.typicode.com
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
-{
-  "name": "Test User",
-  "username": "testuser",
-  "email": "test@user.com",
-  "address": {
-    "street": "Has No Name",
-    "suite": "Apt. 123",
-    "city": "Electri",
-    "zipcode": "54321-6789"
-  }
-}
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
 
-
-21:28:43.264 response time in milliseconds: 356.83
+11:34:59.846 response time in milliseconds: 837.62
 1 < 201
 1 < Access-Control-Allow-Credentials: true
 1 < Access-Control-Expose-Headers: Location
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 5ed9aa7abee105b3-FRA
+1 < CF-RAY: 5f4162b17808073e-FRA
 1 < Cache-Control: no-cache
 1 < Connection: keep-alive
 1 < Content-Length: 216
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 05 Nov 2020 21:28:41 GMT
+1 < Date: Wed, 18 Nov 2020 11:35:00 GMT
 1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < Expires: -1
 1 < Location: http://jsonplaceholder.typicode.com/users/11
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
 1 < Pragma: no-cache
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=wAV5RXRdeA84bwGyGayWHRoLbvhyrU4jENiaQgmBNBhawJIIleqq%2F%2BJWjN81g8pt9FzDhzBeqgEoAWXcnMxWEyPggM9J2NWpPo9T06Ij%2BAo5jha54aF8c0Rrb2xI"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=aPCz7ufCizvf%2Bz7SfEOWSeN0qc3BhpMVVUHihO5R2sspAo09Pd6J2lQLZDdTo85Bgp%2BGT38mZYXMzw2pcWmHz45hygGpoYGmqb65Lc6PxBi8x0PVI0H8l%2BXu%2Bx1x"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d59d70c3ec209f2d48575fbad52447a7d1604611721; expires=Sat, 05-Dec-20 21:28:41 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Set-Cookie: __cfduid=d1e8acb9dc7515f704eae59225974d81f1605699300; expires=Fri, 18-Dec-20 11:35:00 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
 1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
 1 < Via: 1.1 vegur
 1 < X-Content-Type-Options: nosniff
 1 < X-Powered-By: Express
 1 < X-Ratelimit-Limit: 1000
 1 < X-Ratelimit-Remaining: 999
-1 < X-Ratelimit-Reset: 1604611782
-1 < cf-request-id: 063be8e0b3000005b33c0a7000000001
+1 < X-Ratelimit-Reset: 1605699354
+1 < cf-request-id: 067cbc02e70000073eed3c6000000001
 {
   "name": "Test User",
   "username": "testuser",
@@ -389,30 +378,193 @@
   "id": 11
 }
 
+11:34:59.862 [print] created id is:  11
+11:35:00.252 karate.env system property was :::   
+11:35:00.268 Karate Testing Environment :::  DEV 
+11:35:00.268 [print]
+11:35:00.283 request:
+1 > GET https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
 
-21:28:43.284 [print] created id is:  11
-21:28:43.446 karate.env system property was:  
-21:28:43.449 [print] {
-  "uuid": edce3931-38e7-41c1-919a-2bbe1f14f4b9
-}
+11:35:01.408 response time in milliseconds: 1126.52
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5f4162ba1d24e678-LHR
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 18 Nov 2020 11:35:01 GMT
+1 < Etag: W/"133-LSMNaMLmUUW7mb0QKapIU3FQUI0"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=qvUp91jE34Qgjs3sqOId5ZIEwB%2FngrV6Sz8dPlZaGk7wX3Qj1XLzlheYf3ijvV0rKFCL5cXO8Z5JqX%2BgkUqXF%2B%2FL7osI%2BCE7I9o%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d7330e7fd4501df86cb4780afcaff4d971605699301; expires=Fri, 18-Dec-20 11:35:01 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 067cbc084f0000e678cf3e1000000001
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
 
-21:28:43.486 karate.env system property was:  
-21:28:43.491 [print] {
-  "uuid": 5794d0ff-370b-451e-bc18-f23a95eb048d
-}
+11:35:01.424 karate.env system property was :::   
+11:35:01.424 Karate Testing Environment :::  DEV 
+11:35:01.439 [print]
+11:35:01.439 request:
+1 > GET https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
 
-21:28:43.517 karate.env system property was:  
-21:28:43.520 [print] {
-  "uuid": 837db807-69aa-408d-8e88-90926855d211
-}
+11:35:02.221 response time in milliseconds: 786.83
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5f4162c04e512c6e-LHR
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 18 Nov 2020 11:35:02 GMT
+1 < Etag: W/"133-LSMNaMLmUUW7mb0QKapIU3FQUI0"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=c3KWGMxAfFq8XNFjU%2Bz%2BF9jrBdqTRJ03J3ygU8yIWdH3d4ix3WDqorSKaUSc1OwUUV65beoRYzRkj%2F%2FLRktrkhXZ%2BvWyoKPoDtw%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dc1b7505f4a7d7e45b568f207ec69ba5b1605699302; expires=Fri, 18-Dec-20 11:35:02 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 067cbc0c2a00002c6ee6081000000001
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
 
-21:28:43.535 karate.env system property was:  
-21:28:43.538 [print] {
-  "uuid": eb3c2844-436b-4bbb-a894-7de778e7646c
-}
+11:35:02.267 assertion failed: path: $, actual: {"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/s3.amazonaws.com\/uifaces\/faces\/twitter\/josephstein\/128.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}, expected: {data={id=2, email=janet.weaver@reqres.in, first_name=Janet, last_name=Weaver, avatar=https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg}, ad={company=StatusCode Weekly, url=http://statuscode.org/, text=A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.}}, reason: all key-values did not match, expected has un-matched keys: [ad]
+11:35:02.299 karate.env system property was :::   
+11:35:02.299 Karate Testing Environment :::  DEV 
+11:35:02.314 [print]
+11:35:02.314 request:
+1 > POST https://reqres.in/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 34
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"name":"morpheus","job":"leader"}
 
-21:28:43.568 karate.env system property was:  
-21:28:43.568 [print] {
-  "uuid": 9b6967f5-8cd5-4e0d-ab83-dd9f6a50a161
-}
+11:35:03.002 response time in milliseconds: 675.50
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5f4162c60cbf6b8f-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 84
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 18 Nov 2020 11:35:03 GMT
+1 < Etag: W/"54-MVMWvVjb7a2pB1AQRzt4bEtN+aI"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=zax0P6YozuWquq%2F%2B6wGqID33fIfejYB%2BgtBnl5Z4zgXKbi1R2847TM9p5NLSi%2BFjdvfqEpNy1eaJvE0HKBs%2B%2FDXrC%2F9f6JO851c%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=db5e9741145311a84ff5439714dfc3c271605699303; expires=Fri, 18-Dec-20 11:35:03 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 067cbc0fc300006b8f4e104000000001
+{"name":"morpheus","job":"leader","id":"419","createdAt":"2020-11-18T11:35:03.434Z"}
+
+11:35:03.002 [print] created id is:  419
+11:35:03.048 karate.env system property was :::   
+11:35:03.048 Karate Testing Environment :::  DEV 
+11:35:03.048 [print]
+11:35:03.064 request:
+1 > PUT https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 41
+1 > Content-Type: text/plain; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+fixtures/requests/put_request_sample.json
+
+11:35:03.658 response time in milliseconds: 602.88
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5f4162ca9acc0026-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 40
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 18 Nov 2020 11:35:04 GMT
+1 < Etag: W/"28-qdA+/uHGomNJflLUmT5CnhQDPYQ"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=26EBx7uNAxFHoLjdLmV4tHfKIBCmxXK5r%2B3FzronAKpBzIzonlnHSEKRi%2Bq%2BMATpkA91ukfsDG0EWEGwGrFskg2MB3p0%2FfZmvY4%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=da9e780803ba4aae2a150fc7301402d8d1605699304; expires=Fri, 18-Dec-20 11:35:04 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 067cbc129d00000026b3969000000001
+{"updatedAt":"2020-11-18T11:35:04.121Z"}
+
+11:35:03.705 karate.env system property was :::   
+11:35:03.705 Karate Testing Environment :::  DEV 
+11:35:03.705 [print]
+11:35:03.720 request:
+1 > DELETE https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+11:35:04.329 response time in milliseconds: 609.93
+1 < 204
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5f4162ceba5b0696-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Wed, 18 Nov 2020 11:35:04 GMT
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=sL6JBYtC7T3IAEjYfDbENR2AhmUJZUXicpMmFq%2Frl4Oz%2F7Sr2XF2fjGqvBvgR%2FXK35m1PH9wquvyT0bIn0eZgLvfykwqQouIXwA%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=df9ab5d27df1bd94d38d826a79c5da3751605699304; expires=Fri, 18-Dec-20 11:35:04 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 067cbc15340000069693200000000001
+
+11:35:04.361 karate.env system property was :::   
+11:35:04.361 Karate Testing Environment :::  DEV 
+11:35:04.361 [print]
+11:35:04.376 request:
+1 > PATCH https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 41
+1 > Content-Type: text/plain; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+fixtures/requests/put_request_sample.json
+
+11:35:05.017 response time in milliseconds: 646.37
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5f4162d2e9c8079e-LHR
+1 < Connection: keep-alive
+1 < Content-Length: 40
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 18 Nov 2020 11:35:05 GMT
+1 < Etag: W/"28-pfWQbASsEbu/S6QpwHCkpJjV4wc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=NxQAvwKDpRqX0Gquf93RQDYB9TB8rZlpMZVd%2BoFBO%2B8IWAAOhCx05XovY5uCB30%2FkskWT%2B4OZWLPyLwq53Yf41RQs5ZJUrjUeX8%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d3f86789e9bab57be9fb161c527445d161605699305; expires=Fri, 18-Dec-20 11:35:05 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 067cbc17d00000079e49967000000001
+{"updatedAt":"2020-11-18T11:35:05.469Z"}
 

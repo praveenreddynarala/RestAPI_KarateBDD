@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.examples.reqrestests.TestApiTestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.038 s <<< FAILURE! - in com.examples.reqrestests.TestApiTestRunner
+testParallel  Time elapsed: 3.038 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+failed features:
+com.examples.reqrestests.testapi: testapi.feature:19 - path: $, actual: {"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/s3.amazonaws.com\/uifaces\/faces\/twitter\/josephstein\/128.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}, expected: {data={id=2, email=janet.weaver@reqres.in, first_name=Janet, last_name=Weaver, avatar=https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg}, ad={company=StatusCode Weekly, url=http://statuscode.org/, text=A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.}}, reason: all key-values did not match, expected has un-matched keys: [ad]
+ ==> expected: <0> but was: <1>
+

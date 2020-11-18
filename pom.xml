@@ -13,6 +13,8 @@
 		<java.version>1.8</java.version>
 		<maven.compiler.version>3.6.0</maven.compiler.version>
 		<karate.version>0.9.6</karate.version>
+		<kaarte.gatling.version>0.9.6</kaarte.gatling.version>
+		<gatling.plugin.version>3.1.0</gatling.plugin.version>
 	</properties>
 
 	<dependencies>
@@ -26,6 +28,12 @@
 			<groupId>com.intuit.karate</groupId>
 			<artifactId>karate-junit5</artifactId>
 			<version>${karate.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.intuit.karate</groupId>
+			<artifactId>karate-gatling</artifactId>
+			<version>${kaarte.gatling.version}</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -78,6 +86,29 @@
 				<configuration>
 					<argLine>-Dfile.encoding=UTF-8</argLine>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>io.gatling</groupId>
+				<artifactId>gatling-maven-plugin</artifactId>
+				<version>${gatling.plugin.version}</version>
+				<configuration>
+					<simulationsFolder>src/test/java</simulationsFolder>
+					<runMultipleSimulations>true</runMultipleSimulations>
+					<includes>
+						<include>com.performance.*</include>
+					</includes>
+					<jvmArgs>
+						<jvmArg>-Dfile.encoding=UTF-8</jvmArg>
+					</jvmArgs>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>test</phase>
+						<goals>
+							<goal>test</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

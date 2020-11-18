@@ -1,8 +1,36 @@
-11:35:05.204 karate.env system property was :::  users 
-11:35:05.220 Karate Testing Environment :::  DEV 
-11:35:05.220 [print]
-11:35:05.220 request:
-1 > PUT https://reqres.in/api/users/2
+20:36:52.597 karate.env system property was :::  users 
+20:36:52.769 Karate Testing Environment :::  DEV 
+20:36:52.823 [print]
+20:36:53.993 request:
+1 > DELETE https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+
+20:36:54.475 response time in milliseconds: 481.92
+1 < 204
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5f447c8cdecac76d-AMS
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Wed, 18 Nov 2020 20:36:56 GMT
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=nldz%2F5jkjuPM0M2mJW%2FxopS1nL6fEbijmwY6EIY5guCvarNPUVp3AzQf1Qe4fEJP9gBJtvkM690pUz2BgRMQT1EH0EFyieufbA8%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=deb7377f5c76f4308cfefe654914748471605731816; expires=Fri, 18-Dec-20 20:36:56 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 067eac2c080000c76d1ca13000000001
+
+20:36:54.496 karate.env system property was :::  users 
+20:36:54.503 Karate Testing Environment :::  DEV 
+20:36:54.507 [print]
+20:36:54.514 request:
+1 > PATCH https://reqres.in/api/users/2
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Content-Length: 41
@@ -11,23 +39,23 @@
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
 fixtures/requests/put_request_sample.json
 
-11:35:05.860 response time in milliseconds: 631.45
+20:36:54.645 response time in milliseconds: 130.06
 1 < 200
 1 < Access-Control-Allow-Origin: *
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 5f4162d82846f413-LHR
+1 < CF-RAY: 5f447c8e0f430c29-AMS
 1 < Connection: keep-alive
 1 < Content-Length: 40
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Wed, 18 Nov 2020 11:35:06 GMT
-1 < Etag: W/"28-rUPsuTCOAFPtKBxVafNVx+rbqx0"
+1 < Date: Wed, 18 Nov 2020 20:36:56 GMT
+1 < Etag: W/"28-kzqCeqkvnZodWi1rfnmRCUP3Ed8"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=3zLM2IwaSAD4kEfXrujLSyRTvetR9Vj9ROqQqWnJE%2Bw56%2BRgChlI3ox0IQKKSmfpdRRrr4%2FUIE7h9fz%2FyadlRVgTmLYemNR%2FV34%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=iRhZ4nhX%2FLQfgrzaH4vSfTb5X6U6xRmoxNkhwA%2FJE%2FWKsqRh4dS4RHLJVaOT294s2ccHl5pITpBu6nI7vqzABDt3FLgH0Fxt1Wg%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d688c0e14f27e1be2b41e1b435c8623271605699306; expires=Fri, 18-Dec-20 11:35:06 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Set-Cookie: __cfduid=df575d3127b10f2a7b2cb0e75a45cadf91605731816; expires=Fri, 18-Dec-20 20:36:56 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-1 < cf-request-id: 067cbc1b1d0000f41328219000000001
-{"updatedAt":"2020-11-18T11:35:06.302Z"}
+1 < cf-request-id: 067eac2cc700000c2974270000000001
+{"updatedAt":"2020-11-18T20:36:56.686Z"}
 

@@ -2,10 +2,10 @@
            name="com/examples/reqrestests/testapi.feature"
            skipped="0"
            tests="6"
-           time="4.016964">
+           time="8.631608">
    <testcase classname="com.examples.reqrestests.testapi"
              name="Get all users and validate status code"
-             time="0.736143">
+             time="1.727679">
       <system-out>* url baseURL ............................................................. passed
 * print utils ............................................................. passed
 * def postRequest = read(postRequestBody) ................................. passed
@@ -15,7 +15,7 @@ Then status 200 ........................................................... pass
    </testcase>
    <testcase classname="com.examples.reqrestests.testapi"
              name="Get specific user and validate its response"
-             time="0.748961">
+             time="1.747874">
       <failure message="testapi.feature:19 - path: $, actual: {&#34;data&#34;:{&#34;last_name&#34;:&#34;Weaver&#34;,&#34;id&#34;:2,&#34;avatar&#34;:&#34;https:\/\/s3.amazonaws.com\/uifaces\/faces\/twitter\/josephstein\/128.jpg&#34;,&#34;first_name&#34;:&#34;Janet&#34;,&#34;email&#34;:&#34;janet.weaver@reqres.in&#34;},&#34;support&#34;:{&#34;text&#34;:&#34;To keep ReqRes free, contributions towards server costs are appreciated!&#34;,&#34;url&#34;:&#34;https:\/\/reqres.in\/#support-heading&#34;}}, expected: {data={id=2, email=janet.weaver@reqres.in, first_name=Janet, last_name=Weaver, avatar=https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg}, ad={company=StatusCode Weekly, url=http://statuscode.org/, text=A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.}}, reason: all key-values did not match, expected has un-matched keys: [ad]">* url baseURL ............................................................. passed
 * print utils ............................................................. passed
 * def postRequest = read(postRequestBody) ................................. passed
@@ -36,7 +36,7 @@ com.intuit.karate.exception.KarateException: testapi.feature:19 - path: $, actua
    </testcase>
    <testcase classname="com.examples.reqrestests.testapi"
              name="create a user and then get it by id"
-             time="0.635524">
+             time="1.678889">
       <system-out>* url baseURL ............................................................. passed
 * print utils ............................................................. passed
 * def postRequest = read(postRequestBody) ................................. passed
@@ -67,7 +67,7 @@ Then status 201 ........................................................... pass
    </testcase>
    <testcase classname="com.examples.reqrestests.testapi"
              name="update a user"
-             time="0.641315">
+             time="1.668733">
       <system-out>* url baseURL ............................................................. passed
 * print utils ............................................................. passed
 * def postRequest = read(postRequestBody) ................................. passed
@@ -105,7 +105,7 @@ Then status 200 ........................................................... pass
    </testcase>
    <testcase classname="com.examples.reqrestests.testapi"
              name="delete a user"
-             time="0.633491">
+             time="1.670176">
       <system-out>* url baseURL ............................................................. passed
 * print utils ............................................................. passed
 * def postRequest = read(postRequestBody) ................................. passed
@@ -149,7 +149,7 @@ Then status 204 ........................................................... pass
    </testcase>
    <testcase classname="com.examples.reqrestests.testapi"
              name="update a user"
-             time="0.621528">
+             time="0.138257">
       <system-out>* url baseURL ............................................................. passed
 * print utils ............................................................. passed
 * def postRequest = read(postRequestBody) ................................. passed

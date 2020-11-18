@@ -1,28 +1,34 @@
-11:35:05.220 karate.env system property was :::  users 
-11:35:05.220 Karate Testing Environment :::  DEV 
-11:35:05.220 [print]
-11:35:05.235 request:
-1 > DELETE https://reqres.in/api/users/2
+20:36:52.597 karate.env system property was :::  users 
+20:36:52.769 Karate Testing Environment :::  DEV 
+20:36:52.823 [print]
+20:36:53.991 request:
+1 > POST https://reqres.in/api/users
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
+1 > Content-Length: 34
+1 > Content-Type: application/json; charset=UTF-8
 1 > Host: reqres.in
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
+{"name":"morpheus","job":"leader"}
 
-11:35:05.845 response time in milliseconds: 614.49
-1 < 204
-1 < Access-Control-Allow-Origin: *
+20:36:54.472 response time in milliseconds: 479.12
+1 < 201
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 5f4162d83ef706d1-LHR
+1 < CF-RAY: 5f447c8cd8971ec6-AMS
 1 < Connection: keep-alive
-1 < Content-Length: 0
-1 < Date: Wed, 18 Nov 2020 11:35:06 GMT
-1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Content-Length: 84
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 18 Nov 2020 20:36:56 GMT
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=EAK6MeNcDXBnBXdVv3VLaOVcXzakscJd5zVj5P95HV37cFikuEBCK1kO0wnMDqZdsqGNlZWakWRYoqOXmQ0gysZOHKwK4D3LHxE%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=U1PgK2wCp8hz3uDXaGyv%2F30uWcfTFOMOXGGmKckFN4VmjybBEjMmwNJXI1OfrcTiDngC8t%2BC86OqfClo45YLItovPqy3A1xML2A%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=dfe86c529b89cb09ff97daca9319e68f51605699306; expires=Fri, 18-Dec-20 11:35:06 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 < Via: 1.1 vegur
-1 < X-Powered-By: Express
-1 < cf-request-id: 067cbc1b21000006d1083e4000000001
+1 < Set-Cookie: __cfduid=d46c8e6d8c6a85528bbc11a5aeab671f61605731816; expires=Fri, 18-Dec-20 20:36:56 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < access-control-allow-origin: *
+1 < cf-request-id: 067eac2c0a00001ec688804000000001
+1 < etag: W/"54-+VfF69pVcQZUCcmunDixf7USLiM"
+1 < via: 1.1 vegur
+1 < x-powered-by: Express
+{"name":"morpheus","job":"leader","id":"587","createdAt":"2020-11-18T20:36:56.501Z"}
 
+20:36:54.493 [print] created id is:  587

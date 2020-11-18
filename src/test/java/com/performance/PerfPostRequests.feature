@@ -1,7 +1,7 @@
 Feature: Performance of POST Requests
 
   Background:
-    * url URL
+    * url baseURL
 
   @Post_Request
   Scenario: Post create a user and then get it by id

@@ -1,4 +1,3 @@
-C:\Automation\Karate_BDD\RestAPI_KarateBDD\src\test\java\com\examples\ExamplesTest.java
-C:\Automation\Karate_BDD\RestAPI_KarateBDD\src\test\java\utils\GlobalApiRunner.java
-C:\Automation\Karate_BDD\RestAPI_KarateBDD\src\test\java\com\examples\jsonplaceholder\UsersTestRunner.java
-C:\Automation\Karate_BDD\RestAPI_KarateBDD\src\test\java\com\examples\reqrestests\TestApiTestRunner.java
+C:\Work\Automation_POC\RestAPI_KarateBDD\src\test\java\com\examples\jsonplaceholder\UsersTestRunner.java
+C:\Work\Automation_POC\RestAPI_KarateBDD\src\test\java\com\examples\GlobalApiRunner.java
+C:\Work\Automation_POC\RestAPI_KarateBDD\src\test\java\com\examples\reqrestests\TestApiTestRunner.java

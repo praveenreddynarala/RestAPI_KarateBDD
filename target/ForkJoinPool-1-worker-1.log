@@ -1,30 +1,30 @@
-11:35:05.173 karate.env system property was :::  users 
-11:35:05.173 Karate Testing Environment :::  DEV 
-11:35:05.173 [print]
-11:35:05.173 request:
+20:36:52.597 karate.env system property was :::  users 
+20:36:52.768 Karate Testing Environment :::  DEV 
+20:36:52.823 [print]
+20:36:53.990 request:
 1 > GET https://reqres.in/api/users/2
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: reqres.in
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_251)
 
-11:35:05.907 response time in milliseconds: 729.46
+20:36:54.537 response time in milliseconds: 545.39
 1 < 200
 1 < Access-Control-Allow-Origin: *
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 5f4162d80a9bbba6-LHR
+1 < CF-RAY: 5f447c8cde6f9c21-AMS
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Wed, 18 Nov 2020 11:35:06 GMT
+1 < Date: Wed, 18 Nov 2020 20:36:56 GMT
 1 < Etag: W/"133-LSMNaMLmUUW7mb0QKapIU3FQUI0"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=X7FLm1r85kisNHhRmE%2F8NqLqi3Nk8RW%2FurJhL%2FMgw5DNrGwRXRNKuQRvSQiUGhG3HoE9RvVJMt49mqDky4lYajhxsMId2FEzek4%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=Cxi98MNSv4A0qlZuAuFUCrqSGtxbR%2FLKm2A4knn5i4GPIk%2Bz2Pr15Xa6Y%2B6WO1FrEM1KKSbKwt32fzm9KufNVS5coHv%2FBpZq578%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=dad5ce60e8035c9a7c6b5dfee5ba39b6a1605699306; expires=Fri, 18-Dec-20 11:35:06 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Set-Cookie: __cfduid=db289e01553d1809e1a508c6df56fdf4f1605731816; expires=Fri, 18-Dec-20 20:36:56 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 < Transfer-Encoding: chunked
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-1 < cf-request-id: 067cbc1b060000bba6838f0000000001
+1 < cf-request-id: 067eac2c0900009c21d094b000000001
 {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
 

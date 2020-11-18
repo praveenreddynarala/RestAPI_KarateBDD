@@ -1,4 +1,3 @@
-utils\GlobalApiRunner.class
-com\examples\ExamplesTest.class
 com\examples\reqrestests\TestApiTestRunner.class
 com\examples\jsonplaceholder\UsersTestRunner.class
+com\examples\GlobalApiRunner.class

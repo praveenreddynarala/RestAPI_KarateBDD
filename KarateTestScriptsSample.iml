@@ -11,6 +11,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="scala-sdk-2.12.6" level="application" />
+    <orderEntry type="library" name="scala-sdk-2.13.3" level="application" />
     <orderEntry type="library" scope="TEST" name="Maven: com.intuit.karate:karate-apache:0.9.6" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.intuit.karate:karate-core:0.9.6" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.jayway.jsonpath:json-path:2.4.0" level="project" />
@@ -41,6 +42,7 @@
     <orderEntry type="library" scope="TEST" name="Maven: io.gatling:gatling-core:3.0.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.typesafe.akka:akka-slf4j_2.12:2.5.19" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.simpleflatmapper:lightning-csv:6.0.13" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.simpleflatmapper:sfm-util:jdk9:6.0.13" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.simpleflatmapper:sfm-util:6.0.13" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.github.ben-manes.caffeine:caffeine:2.6.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.pebbletemplates:pebble:3.0.6" level="project" />

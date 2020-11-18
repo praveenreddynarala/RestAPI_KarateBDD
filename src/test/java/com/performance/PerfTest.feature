@@ -1,7 +1,7 @@
 Feature: Performance
 
   Background:
-    * url URL
+    * url baseURL
 #    * def postRequest = read(postRequestBody)
 
   @Get_Request
